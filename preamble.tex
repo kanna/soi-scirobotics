@@ -1,0 +1,229 @@
+\usepackage[font=footnotesize]{caption}
+\RequirePackage{pdf14}
+\usepackage{float}
+\usepackage{epsf}
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage{latexsym}
+\usepackage{color, colortbl}
+\usepackage{wrapfig}
+\usepackage{topcapt}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{mdwlist}
+\usepackage{todonotes}
+\usepackage{listings}
+\usepackage{comment}
+\usepackage{tablefootnote}
+\usepackage{makecell}
+\usepackage{footnotehyper}
+
+\pdfminorversion=4
+
+%\usepackage{color}
+\newcommand{\lc}[1]{\textcolor{blue}{#1}}
+
+
+% \usepackage{amsmath, amsfonts, amssymb}
+\usepackage[hmargin=1in,vmargin=1.2in]{geometry}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage[bottom]{footmisc}
+\usepackage{afterpage}
+%\usepackage[caption=false]{caption}
+\usepackage{eurosym}
+\usepackage{enumitem}
+% \usepackage{soul}
+\usepackage{fancyhdr}
+\usepackage{dashrule}
+% \usepackage[stable]{footmisc}
+% \usepackage{placeins}
+% \setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+% \usepackage[utf8]{inputenc}
+\usepackage{gensymb}
+% \usepackage{rotating}
+% \usepackage{tikz}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage[normalem]{ulem}
+
+\widowpenalty=1000
+\clubpenalty=1000
+
+\def\rx{{\texttt{T-REX\ }}}
+\def\rxe{{\texttt{T-REX}}}
+\def\ls{{\texttt{LSTS\ }}}
+\def\lse{{\texttt{LSTS}}}
+\def\eut{{\texttt{EUROPA}$_2$\ }}
+\def\eu{{\texttt{EUROPA}\ }}
+\def\eue{{\texttt{EUROPA}}}
+\def\eus{{\texttt{EUROPA}'s\ }}
+\def\nd{{\texttt{NDDL\ }}}
+\def\nde{{\texttt{NDDL}}}
+\def\pd{{\texttt{PDDL\ }}}
+\def\pde{{\texttt{PDDL}}}
+\def\eur{{\texttt{EUROPtus\ }}}
+\def\eure{{\texttt{EUROPtus}}}
+\def\nas{{\texttt{NASA\ }}}
+\def\nase{{\texttt{NASA}}}
+\def\univ{{\texttt{UPorto\ }}}
+\def\unive{{\texttt{UPorto}}}
+\def\rx{{\texttt{T-REX\ }}}
+\def\rxe{{\texttt{T-REX}}}
+\def\du{{\texttt{DUNE}\ }}
+\def\due{{\texttt{DUNE}}}
+\def\nep{{\texttt{NEPTUS}\ }}
+\def\nepe{{\texttt{NEPTUS}}}
+\def\rip{{\texttt{Ripples}\ }}
+\def\ripe{{\texttt{Ripples}}}
+\def\imc{{\texttt{IMC}\ }}
+\def\imce{{\texttt{IMC}}}
+\def\hub{{\texttt{HUB}\ }}
+\def\hube{{\texttt{HUB}}}
+
+
+\def\etal{{et al.\/}}
+\def\eg{e.g., }
+\def\ie{{i.e.,\ }}
+\def\etc{{etc.\ }}
+\def\situ{{in situ \/}}
+\def\PN{{\emph{PN} }}
+
+
+\input{epsf}
+
+%\usepackage{mathptmx}
+%\usepackage{multirow}
+
+\newcommand{\rtime}[1]{\par\noindent\rlap{#1} \hspace*{2.15cm}}
+\newcommand{\iblank}{\par \noindent \hspace*{2.4cm} \hangindent 2.6cm}
+\newcommand{\m}[1]{\ensuremath{\mathbf{#1}}}
+\newcommand{\mc}[1]{\ensuremath{\mathcal{#1}}}
+% \newcommand{\mb}[1]{\mbox{\boldmath$#1$\unboldmath}}
+%\newcommand{\norm}[1]{\left| \left| #1 \right| \right| ^2}
+\newcommand{\snr}{\hbox{SNR}}
+\newcommand{\mse}{\hbox{MSE}}
+\newcommand{\E}{{\mathbb E}}
+\newcommand{\cn}{{\mathcal{CN}}}
+\newcommand{\ba}{\begin{align*}}
+\newcommand{\ea}{\end{align*}}
+
+\newcommand{\real}{{\mathbb{R}}}
+\newcommand{\integer}{{\mathbb{Z}}}
+\renewcommand{\natural}{{\mathbb{N}}}
+\newcommand{\argmin}{\operatorname{argmin}\displaylimits}
+\newcommand{\argmax}{\operatorname{argmax}\displaylimits}
+
+\newcommand{\relthresh}{{T_{\text{rel}}}}
+\newcommand{\absthresh}{{T_{\text{abs}}}}
+
+\newcommand{\nprof}{{N_{\text{prof}}}}
+\newcommand{\DM}{{DM}}
+\newcommand{\UM}{{UM}}
+\newcommand{\deltaMax}{{\partial_{\max}}}
+\newcommand{\IFD}{{IFD}}
+\newcommand{\IFU}{{IFU}}
+
+\newcommand{\mvdiff}{\mathbf{mvd}}
+\newcommand{\mvest}{\widehat{\mvdiff}}
+\newcommand{\prof}{p}
+
+\newtheorem{Prop}{Proposition}
+\newtheorem{Theorem}{Theorem}
+\newtheorem{Lemma}{Lemma}
+\newtheorem{Corrolary}{Corollary}
+
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+
+\newlength{\doublespacelength}
+\setlength{\doublespacelength}{\baselineskip}
+\addtolength{\doublespacelength}{0.5\baselineskip}
+\newcommand{\doublespace}{\setlength{\baselineskip}{\doublespacelength}}
+
+\newlength{\singlespacelength}
+\setlength{\singlespacelength}{\baselineskip}
+\newcommand{\singlespace}{\setlength{\baselineskip}{\singlespacelength}}
+
+
+\newlength{\savedspacing}
+\newcommand{\savespacing}{\setlength{\savedspacing}{\baselineskip}}
+\newcommand{\restorespacing}{\setlength{\baselineskip}{\savedspacing}}
+
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\topsep}{0pt}
+\setlength{\partopsep}{0pt}
+% \setlength{\parindent}{0pt}
+
+\newcommand{\icomnt}[1]{{\color{red}{#1}}}
+\newcommand{\kc}[1]{{\color{blue}{#1}}}
+\newcommand{\zpc}[1]{{\color{purple}{#1}}}
+\newcommand{\rpsm}[1]{{\color{green}{#1}}}
+\newcommand{\mjc}[1]{{\color{orange}{#1}}}
+\newcommand{\unit}[1]{\ensuremath{\mathrm{#1}}}                  %%%% to units and other roman math stuff
+% \linespread{0.98}
+% % \linespread{2.00}
+
+\newcounter{quotenumber}
+
+\newenvironment{numquote}{%
+    \begin{enumerate}%
+     \setcounter{enumi}{\value{quotenumber}}%
+     \color{darkgray}
+    \item \begin{quote}%
+}{%
+    \end{quote}%
+    \setcounter{quotenumber}{\value{enumi}}
+    \end{enumerate}%
+}%
+
+\makeatletter
+\def\myitem{%
+   \@ifnextchar[ \@myitem{\@noitemargtrue\@myitem[\@itemlabel]}}
+\def\@myitem[#1]{\item[#1]\mbox{}}
+\makeatother
+
+
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+\setcounter{secnumdepth}{1} 
+
+\let\oldthebibliography\thebibliography
+\let\endoldthebibliography\endthebibliography
+\renewenvironment{thebibliography}[1]{
+  \begin{oldthebibliography}{#1}
+    \setlength{\itemsep}{0em}
+    \setlength{\parskip}{0em}
+}
+{
+  \end{oldthebibliography}
+}
+\linespread{0.96}
+\parskip 0.1cm
+\definecolor{Gray}{gray}{0.6}
+
+\newcommand{\sidebysidecaption}[4]{%
+\RaggedRight%
+  \begin{minipage}[t]{#1}
+    \vspace*{0pt}
+    #3
+  \end{minipage}
+  \hfill%
+  \begin{minipage}[t]{#2}
+    \vspace*{0pt}
+    #4
+\end{minipage}%
+}
+
+\renewcommand{\footnotesize}{\fontsize{8pt}{10pt}\selectfont}
+
